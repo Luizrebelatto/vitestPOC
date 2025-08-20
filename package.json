@@ -1,0 +1,28 @@
+{
+  "name": "vitest-poc",
+  "version": "1.0.0",
+  "description": "Projeto de exemplo com Vitest e cobertura de testes",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui",
+    "test:watch": "vitest --watch",
+    "demo": "node scripts/demo.js",
+    "setup": "npm install && npm run test:coverage",
+    "clean": "rm -rf node_modules coverage package-lock.json"
+  },
+  "keywords": ["vitest", "testing", "coverage", "poc", "javascript", "math", "utils"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "vitest": "^1.0.0",
+    "@vitest/coverage-v8": "^1.0.0",
+    "@vitest/ui": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
