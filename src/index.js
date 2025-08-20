@@ -86,18 +86,13 @@ export function isPrime(num) {
   return true;
 }
 
-/**
- * Função para calcular o fatorial de um número
- * @param {number} num - Número para calcular o fatorial
- * @returns {number} Fatorial do número
- */
 export function factorial(num) {
   if (typeof num !== 'number') {
-    throw new Error('O parâmetro deve ser um número');
+    throw new Error('Parameter must be a number');
   }
   
   if (num < 0) {
-    throw new Error('Fatorial não é definido para números negativos');
+    throw new Error('Factorial is not defined for negative numbers');
   }
   
   if (num === 0 || num === 1) {
@@ -112,12 +107,6 @@ export function factorial(num) {
   return result;
 }
 
-/**
- * Função para calcular a potência de um número
- * @param {number} base - Base
- * @param {number} exponent - Expoente
- * @returns {number} Resultado da potência
- */
 export function power(base, exponent) {
   if (typeof base !== 'number' || typeof exponent !== 'number') {
     throw new Error('Both parameters must be numbers');
@@ -136,64 +125,50 @@ export function power(base, exponent) {
   return exponent < 0 ? 1 / result : result;
 }
 
-/**
- * Função para encontrar o maior número em um array
- * @param {number[]} numbers - Array de números
- * @returns {number} Maior número do array
- */
 export function findMax(numbers) {
   if (!Array.isArray(numbers)) {
-    throw new Error('O parâmetro deve ser um array');
+    throw new Error('Parameter must be an array');
   }
   
   if (numbers.length === 0) {
-    throw new Error('O array não pode estar vazio');
+    throw new Error('Array cannot be empty');
   }
   
   if (!numbers.every(num => typeof num === 'number')) {
-    throw new Error('Todos os elementos do array devem ser números');
+    throw new Error('All elements of the array must be numbers');
   }
   
   return Math.max(...numbers);
 }
 
-/**
- * Função para encontrar o menor número em um array
- * @param {number[]} numbers - Array de números
- * @returns {number} Menor número do array
- */
 export function findMin(numbers) {
   if (!Array.isArray(numbers)) {
-    throw new Error('O parâmetro deve ser um array');
+    throw new Error('Parameter must be an array');
   }
   
   if (numbers.length === 0) {
-    throw new Error('O array não pode estar vazio');
+    throw new Error('Array cannot be empty');
   }
   
   if (!numbers.every(num => typeof num === 'number')) {
-    throw new Error('Todos os elementos do array devem ser números');
+    throw new Error('All elements of the array must be numbers');
   }
   
   return Math.min(...numbers);
 }
 
-/**
- * Função para calcular a média de um array de números
- * @param {number[]} numbers - Array de números
- * @returns {number} Média dos números
- */
+
 export function calculateAverage(numbers) {
   if (!Array.isArray(numbers)) {
-    throw new Error('O parâmetro deve ser um array');
+    throw new Error('Parameter must be an array');
   }
   
   if (numbers.length === 0) {
-    throw new Error('O array não pode estar vazio');
+    throw new Error('Array cannot be empty');
   }
   
   if (!numbers.every(num => typeof num === 'number')) {
-    throw new Error('Todos os elementos do array devem ser números');
+    throw new Error('All elements of the array must be numbers');
   }
   
   const sum = numbers.reduce((acc, num) => acc + num, 0);
