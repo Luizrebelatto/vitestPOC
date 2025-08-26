@@ -1,25 +1,13 @@
-/**
- * Função para calcular a soma de dois números
- * @param {number} a - Primeiro número
- * @param {number} b - Segundo número
- * @returns {number} Soma dos números
- */
 export function add(a, b) {
   if (typeof a !== 'number' || typeof b !== 'number') {
-    throw new Error('Ambos os parâmetros devem ser números');
+    throw new Error('Both parameters must be numbers');
   }
   return a + b;
 }
 
-/**
- * Função para calcular a subtração de dois números
- * @param {number} a - Primeiro número
- * @param {number} b - Segundo número
- * @returns {number} Subtração dos números
- */
 export function subtract(a, b) {
   if (typeof a !== 'number' || typeof b !== 'number') {
-    throw new Error('Ambos os parâmetros devem ser números');
+    throw new Error('Both parameters must be numbers');
   }
   return a - b;
 }
@@ -27,36 +15,31 @@ export function subtract(a, b) {
 
 export function multiply(a, b) {
   if (typeof a !== 'number' || typeof b !== 'number') {
-    throw new Error('Ambos os parâmetros devem ser números');
+    throw new Error('Both parameters must be numbers');
   }
   return a * b;
 }
 
 export function divide(a, b) {
   if (typeof a !== 'number' || typeof b !== 'number') {
-    throw new Error('Ambos os parâmetros devem ser números');
+    throw new Error('Both parameters must be numbers');
   }
   if (b === 0) {
-    throw new Error('Divisão por zero não é permitida');
+    throw new Error('Division by zero is not allowed');
   }
   return a / b;
 }
 
 export function isEven(num) {
   if (typeof num !== 'number') {
-    throw new Error('O parâmetro deve ser um número');
+    throw new Error('Parameter must be a number');
   }
   return num % 2 === 0;
 }
 
-/**
- * Função para verificar se um número é primo
- * @param {number} num - Número a ser verificado
- * @returns {boolean} true se for primo, false caso contrário
- */
 export function isPrime(num) {
   if (typeof num !== 'number') {
-    throw new Error('O parâmetro deve ser um número');
+    throw new Error('Parameter must be a number');
   }
   
   if (num < 2) return false;
