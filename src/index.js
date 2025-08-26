@@ -24,12 +24,7 @@ export function subtract(a, b) {
   return a - b;
 }
 
-/**
- * Função para calcular a multiplicação de dois números
- * @param {number} a - Primeiro número
- * @param {number} b - Segundo número
- * @returns {number} Multiplicação dos números
- */
+
 export function multiply(a, b) {
   if (typeof a !== 'number' || typeof b !== 'number') {
     throw new Error('Ambos os parâmetros devem ser números');
@@ -37,12 +32,6 @@ export function multiply(a, b) {
   return a * b;
 }
 
-/**
- * Função para calcular a divisão de dois números
- * @param {number} a - Primeiro número
- * @param {number} b - Segundo número
- * @returns {number} Divisão dos números
- */
 export function divide(a, b) {
   if (typeof a !== 'number' || typeof b !== 'number') {
     throw new Error('Ambos os parâmetros devem ser números');
@@ -53,11 +42,6 @@ export function divide(a, b) {
   return a / b;
 }
 
-/**
- * Função para verificar se um número é par
- * @param {number} num - Número a ser verificado
- * @returns {boolean} true se for par, false se for ímpar
- */
 export function isEven(num) {
   if (typeof num !== 'number') {
     throw new Error('O parâmetro deve ser um número');
