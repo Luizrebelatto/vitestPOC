@@ -8,7 +8,20 @@
 - clone project
 - run `yarn` or `npm install`
 
-### Demo
+## Scripts
+- `npm run test`  
+  Run Vitest in standard mode.
+
+- `npm run test:coverage`
+  Run the tests and generates the **code coverage report.
+
+- `npm run test:ui`  
+  Open the Vitest graphical interface in the browser, allowing you to view and run tests interactively.
+
+- `npm run test:watch`
+  Run the tests in observation mode, re-executing them whenever a file is changed.
+
+## Demo
 
 https://github.com/user-attachments/assets/f23b1bcd-87af-4df6-be34-f92503698257
 
