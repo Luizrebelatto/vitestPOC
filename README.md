@@ -13,7 +13,7 @@
   Run Vitest in standard mode.
 
 - `npm run test:coverage`
-  Run the tests and generates the **code coverage report.
+  Run the tests and generates the code coverage report.
 
 - `npm run test:ui`  
   Open the Vitest graphical interface in the browser, allowing you to view and run tests interactively.
